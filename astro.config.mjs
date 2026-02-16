@@ -39,4 +39,10 @@ export default defineConfig({
     },
     extendDefaultPlugins: true
   },
+  vite: {
+    server: {
+      host: "0.0.0.0",
+      allowedHosts: ["thearium.ca", "www.thearium.ca", "192.168.2.245"]
+    }
+  },
 });
