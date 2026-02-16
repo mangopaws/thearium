@@ -18,12 +18,13 @@ export interface Props {
 }
 
 const { title, description, image, noindex, canonical } = Astro.props;
+const isHome = Astro.url.pathname === "/";
 
-const siteTitle = "Astrogon";
-const siteDescription = "Astrogon is a simple and elegant Astro theme.";
+const siteTitle = "Thearium";
+const siteDescription = "An independent field archive";
 const siteImage = "@assets/og-image.png";
-const siteAuthor = "Jane Doe";
-const baseUrl = "https://janedoe.com";
+const siteAuthor = "Thearium";
+const baseUrl = "https://thearium.com";
 ---
 
 <!DOCTYPE html>
@@ -132,7 +133,7 @@ const baseUrl = "https://janedoe.com";
     <Tooltips interactive={false} delay={[333, 0]} />
   </head>
   <body>
-    <Background />
+    {isHome && <Background />}
     <Header />
     <main id="main-content" class="flex-1">
       <slot/>

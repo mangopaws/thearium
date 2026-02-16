@@ -1,22 +1,6 @@
 /* Fonts */
 
-/* Cormorant 500 */
-@font-face {
-  font-display: block;
-  font-family: "Cormorant";
-  font-style: normal;
-  font-weight: 500;
-  src: url("/fonts/cormorant/cormorant-500.woff2") format("woff2");
-}
-
-/* Cormorant 700 */
-@font-face {
-  font-display: block;
-  font-family: "Cormorant";
-  font-style: normal;
-  font-weight: 700;
-  src: url("/fonts/cormorant/cormorant-700.woff2") format("woff2");
-}
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=EB+Garamond:wght@400;500;600;700&display=swap");
 
 /* Inter Regular */
 @font-face {
