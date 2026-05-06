@@ -1,0 +1,13 @@
+services:
+  thearium:
+    build: .
+    container_name: thearium-app
+    restart: unless-stopped
+    networks:
+      - web
+    environment:
+      - NODE_ENV=production
+
+networks:
+  web:
+    external: true
