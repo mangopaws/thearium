@@ -22,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: `(function(){try{var t=localStorage.getItem('arium-theme');if(t&&['twilight','night','mist'].includes(t))document.documentElement.dataset.theme=t}catch(e){}})()`,
           }}
         />
+        <script defer src="https://analytics.abreeze.studio/script.js" data-website-id="35071b79-70ae-4b2c-ac0a-997c1ca089f2" />
       </head>
       <body>
         <ThemeProvider>
