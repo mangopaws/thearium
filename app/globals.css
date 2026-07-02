@@ -871,3 +871,14 @@ header.top, .hero, footer.gal, .legend, #viz { animation: fadeIn 1.4s ease both;
   .sh-pill.live .pulse { animation: none; }
   header.top, .hero, footer.gal, .legend, #viz { animation: none; }
 }
+
+/* ───────── ARTICLE: lead drop-cap ───────── */
+.arium-lead::first-letter {
+  font-family: 'Instrument Serif', serif;
+  font-style: italic;
+  float: left;
+  font-size: 3.4em;
+  line-height: 0.72;
+  padding: 6px 12px 0 0;
+  color: var(--accent);
+}
